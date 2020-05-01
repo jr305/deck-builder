@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Deck Builder - Home";
 }
 
 	<style type="text/css">
@@ -8,16 +8,51 @@
       bottom: 50px;
       left: 60px;
     }
+    .card {
+      margin: 30px auto;
+    }
   </style>
 
   <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <div class="card" style="width: 18rem;">
-      <i class="fab fa-fort-awesome-alt fa-9x card-body bg-primary"></i>
-      <i class="plus fas fa-plus fa-2x"></i>
-      <div class="card-body">
-        <h5 class="card-title">Create new deck to use deck in a game</h5>
-        <a href="#" class="btn btn-primary">Create Deck</a>
-      </div>
-    </div>
+
+		<div class="container">
+			<div class="row">
+        
+        <div class="col-md-4 card-deck">
+          <div class="card" style="width: 18rem;">
+            <i class="fab fa-fort-awesome-alt fa-9x card-body bg-primary"></i>
+            <i class="plus fas fa-plus fa-2x"></i>
+            <div class="card-body">
+              <h5 class="card-title">Create new deck to use in a game</h5>
+              <a href="/Deck" class="btn btn-primary">Create Deck</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 card-deck">
+          <div class="card" style="width: 18rem;">
+            <i class="fas fa-chess-king fa-9x card-body bg-primary"></i>
+            <div class="card-body">
+              <h5 class="card-title">Host new game to start a game session</h5>
+              <a href="/Game" class="btn btn-primary">Start New Game</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 card-deck">
+          <div class="card" style="width: 18rem;">
+            <i class="fas fa-user-friends fa-9x card-body bg-primary"></i>
+            <div class="card-body">
+              <h5 class="card-title">Join existing game</h5>
+              <a href="/Game/Join" class="btn btn-primary">Join</a>
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+    
+
+    
+
   </div>
